@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #010611;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-heading {
+    color: white;
+    text-transform: uppercase;
+}
+
+.square-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.squares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.square {
+    background-color: #ff0100;
+    width: 10vh;
+    height: 10vh;
+    margin: 10px;
+}
+
+.draw,
+.reset {
+    width: 40%;
+    padding: 2%;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.green {
+    background-color: #3bd80d;
+}
+
+@media screen and (min-width: 800px) {
+    .draw,
+    .reset {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .draw,
+    .reset {
+        width: 10%;
+        padding: 1%;git
+    }
+}
+
+
+@media screen and (min-width: 667px) {
+    .square {
+        width: 15vh;
+        height: 15vh;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .square {
+        width: 10vh;
+        height: 10vh;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .h1-heading {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .h1-heading {
+        font-size: 44px;
+    }
+}
+
