@@ -1,11 +1,11 @@
 let btn = document.querySelector(".draw");
-let reset = document.querySelector(".reset");
 
 const segments = [
     document.querySelectorAll(`div[data-segment="1"]`),
     document.querySelectorAll(`div[data-segment="2"]`),
     document.querySelectorAll(`div[data-segment="3"]`),
 ];
+
 let square = document.querySelectorAll(".square");
 
 function reload() {
@@ -19,6 +19,13 @@ function reload() {
 btn.addEventListener("click", () => {
     reload();
     const number = Math.floor(Math.random() * 6 + 1);
+
+    const random = document.createElement("p");
+    random.classList.add("even")
+    const randomlyNumber = document.querySelector(".randomlyNumber");
+    random.appendChild(document.createTextNode(number.toString()));
+    randomlyNumber.prepend(random);
+
 
     switch (number) {
         case 1:

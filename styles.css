@@ -41,6 +41,7 @@ body {
     width: 10vh;
     height: 10vh;
     margin: 10px;
+    border-radius: 50%;
 }
 
 .draw,
@@ -56,6 +57,21 @@ body {
     cursor: pointer;
 }
 
+.randomlyNumber {
+    width: 40%;
+    padding: 2%;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.even:nth-child(even) {
+    color: #3bd80d;
+}
 
 .green {
     background-color: #3bd80d;
@@ -70,7 +86,9 @@ body {
 
 @media screen and (min-width: 1280px) {
     .draw,
-    .reset {
+    .reset,
+    .randomlyNumber
+    {
         width: 10%;
         padding: 1%;
     }
