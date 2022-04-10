@@ -79,7 +79,8 @@ body {
 
 @media screen and (min-width: 800px) {
     .draw,
-    .reset {
+    .reset,
+    .randomlyNumber {
         width: 30%;
     }
 }
@@ -87,8 +88,7 @@ body {
 @media screen and (min-width: 1280px) {
     .draw,
     .reset,
-    .randomlyNumber
-    {
+    .randomlyNumber {
         width: 10%;
         padding: 1%;
     }
